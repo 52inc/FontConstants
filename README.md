@@ -1,7 +1,8 @@
 # FontConstants
 A library to provide compiler-checked accessors to UIFont, with OS availability safety checks.
 
-![Usage](https://raw.githubusercontent.com/52inc/FontConstants/master/ReadMeResources/Usage.jpg)
+###### Example
+`label.font = UIFont.futura.mediumItalic.font(size: 12.0)`
 
 ### Introduction
 UIFont's string-based API for choosing fonts is notoriously prone to typos and mistakes. Unfortunately, these often result in crashes or incorrect styles that aren't located until much later in development. FontConstants provides enum declarations and accessors for all fonts bundle with iOS.
