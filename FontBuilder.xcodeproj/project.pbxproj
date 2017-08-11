@@ -8,23 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		C69EBEC91F3D327C006A093C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EBEC81F3D327C006A093C /* main.swift */; };
+		C69EBED11F3D33D1006A093C /* Platforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EBED01F3D33D1006A093C /* Platforms.swift */; };
+		C69EBED51F3D348A006A093C /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EBED41F3D348A006A093C /* Availability.swift */; };
+		C69EBED71F3D37BF006A093C /* FontFamilyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EBED61F3D37BF006A093C /* FontFamilyGenerator.swift */; };
+		C6EE13931F3D431900E05F51 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EE13921F3D431900E05F51 /* Strings.swift */; };
+		C6EE13951F3D4D7200E05F51 /* PodSpecTemplate.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6EE13941F3D4D5700E05F51 /* PodSpecTemplate.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C69EBEC31F3D327C006A093C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				C6EE13951F3D4D7200E05F51 /* PodSpecTemplate.txt in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C69EBEC51F3D327C006A093C /* FontBuilder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FontBuilder; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69EBEC81F3D327C006A093C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C69EBED01F3D33D1006A093C /* Platforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platforms.swift; sourceTree = "<group>"; };
+		C69EBED41F3D348A006A093C /* Availability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Availability.swift; sourceTree = "<group>"; };
+		C69EBED61F3D37BF006A093C /* FontFamilyGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFamilyGenerator.swift; sourceTree = "<group>"; };
+		C6EE13921F3D431900E05F51 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		C6EE13941F3D4D5700E05F51 /* PodSpecTemplate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodSpecTemplate.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +69,37 @@
 			isa = PBXGroup;
 			children = (
 				C69EBEC81F3D327C006A093C /* main.swift */,
+				C6EE13941F3D4D5700E05F51 /* PodSpecTemplate.txt */,
+				C6EE13911F3D431000E05F51 /* Utilities */,
+				C69EBECF1F3D3393006A093C /* Syntax Components */,
 			);
 			path = FontBuilder;
+			sourceTree = "<group>";
+		};
+		C69EBECF1F3D3393006A093C /* Syntax Components */ = {
+			isa = PBXGroup;
+			children = (
+				C69EBED61F3D37BF006A093C /* FontFamilyGenerator.swift */,
+				C69EBED41F3D348A006A093C /* Availability.swift */,
+				C69EBED21F3D346C006A093C /* Structures */,
+			);
+			path = "Syntax Components";
+			sourceTree = "<group>";
+		};
+		C69EBED21F3D346C006A093C /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				C69EBED01F3D33D1006A093C /* Platforms.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
+		C6EE13911F3D431000E05F51 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C6EE13921F3D431900E05F51 /* Strings.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69EBED71F3D37BF006A093C /* FontFamilyGenerator.swift in Sources */,
+				C69EBED51F3D348A006A093C /* Availability.swift in Sources */,
+				C6EE13931F3D431900E05F51 /* Strings.swift in Sources */,
+				C69EBED11F3D33D1006A093C /* Platforms.swift in Sources */,
 				C69EBEC91F3D327C006A093C /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
