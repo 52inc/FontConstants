@@ -2,8 +2,7 @@ Pod::Spec.new do |s|
   s.name = 'FontConstants'
   s.version = '1.0'
 
-  s.osx.deployment_target = '10.8'
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
@@ -11,11 +10,12 @@ Pod::Spec.new do |s|
   s.summary = 'The safest way to use UIFont'
   s.homepage = 'https://github.com/52inc/FontConstants'
   s.author = { 'Brendan Lee' => 'brendan@52inc.com' }
-  s.source = { :git => 'https://github.com/52inc/FontConstants', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/52inc/FontConstants.git', :tag => s.version.to_s }
 
   s.description = 'FontConstants provides compiler-checked enums for safe and easy use of UIFont. With enums and OS version availability checks, FontConstants helps make sure UIFont works like you expect.'
 
   s.requires_arc = true
+  s.frameworks = 'UIKit'
 
   s.default_subspec = 'AllFonts'
 

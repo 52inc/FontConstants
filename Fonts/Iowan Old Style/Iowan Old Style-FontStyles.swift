@@ -1,3 +1,5 @@
+import UIKit
+
 @available(iOS 7.0 ,watchOS 8.0 ,tvOS 9.0, *)
 public extension UIFont {
 

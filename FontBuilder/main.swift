@@ -64,7 +64,7 @@ for currentFont in fonts
     _ = try? FileManager.default.createDirectory(at: extensionWriteDirectory, withIntermediateDirectories: true, attributes: nil)
     
     let extensionWriteFile = extensionWriteDirectory.appendingPathComponent("\(familyName)-FontStyles.swift")
-    _ = try? extensionContent.write(to: extensionWriteFile, atomically: true, encoding: .utf8)
+    _ = try? ("import UIKit\n\n" + extensionContent).write(to: extensionWriteFile, atomically: true, encoding: .utf8)
     
     collectedPodSpecs += "  s.subspec '\(normalizeFontName(fontName: familyName))' do |spec|\n"
     collectedPodSpecs += "\tspec.source_files = 'Fonts/\(familyName)/*.{swift}'\n"
@@ -75,7 +75,7 @@ let extensionWriteDirectory = outputDirectory.appendingPathComponent("All Fonts"
 _ = try? FileManager.default.createDirectory(at: extensionWriteDirectory, withIntermediateDirectories: true, attributes: nil)
 
 let extensionWriteFile = extensionWriteDirectory.appendingPathComponent("FontStyles.swift")
-_ = try? collectedExtensions.write(to: extensionWriteFile, atomically: true, encoding: .utf8)
+_ = try? ("import UIKit\n\n" + collectedExtensions).write(to: extensionWriteFile, atomically: true, encoding: .utf8)
 
 collectedPodSpecs += "  s.subspec '\("AllFonts")' do |spec|\n"
 collectedPodSpecs += "\tspec.source_files = 'Fonts/\("All Fonts")/*.{swift}'\n"
