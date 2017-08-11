@@ -267,10 +267,6 @@ Pod::Spec.new do |s|
 	spec.source_files = 'Fonts/Party LET/*.{swift}'
   end
 
-  s.subspec 'sanFrancisco' do |spec|
-	spec.source_files = 'Fonts/San Francisco/*.{swift}'
-  end
-
   s.subspec 'savoyeLetPlain' do |spec|
 	spec.source_files = 'Fonts/Savoye Let Plain/*.{swift}'
   end

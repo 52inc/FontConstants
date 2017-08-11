@@ -80,9 +80,12 @@ func generateFontFamilyExtension(fontFamily: [String : Any]) -> String? {
     
     extensionString += generateAvailabilityAnnotation(platformVersions: platformVersions) ?? ""
     
-    extensionString += "\nextension UIFont {\n\n"
+    extensionString += "\npublic extension UIFont {\n\n"
     
-    extensionString += "\tenum \(normalizeFontName(fontName: fontFamily["family_name"] as? String ?? "")): String {\n\n"
+    extensionString += "\tpublic enum \(normalizeFontName(fontName: fontFamily["family_name"] as? String ?? "")): String {\n\n"
+    
+    // We use this to make sure we don't write duplicates from the iOS Fonts database... Specifically, as of this writing, AppleSDGothicNeo-Medium
+    var alreadyWrittenFaces = [String : Bool]()
     
     if let faces = fontFamily["faces"] as? [[String : Any]]
     {
@@ -92,11 +95,16 @@ func generateFontFamilyExtension(fontFamily: [String : Any]) -> String? {
                 continue
             }
             
+            guard alreadyWrittenFaces[faceName] == nil else {
+                continue
+            }
+            
+            alreadyWrittenFaces[faceName] = true
             extensionString += "\t\tcase \(normalizedFaceName(fontName: faceName)) = \"\(faceName)\"\n"
         }
     }
     
-    extensionString += "\n\t\tfunc font(size: CGFloat) -> UIFont {\n\t\t\treturn UIFont(self.rawValue, size: size)!\n"
+    extensionString += "\n\t\tpublic func font(size: CGFloat) -> UIFont {\n\t\t\treturn UIFont(name: self.rawValue, size: size)!\n"
     
     extensionString += "\t\t}\n"
     
@@ -124,6 +132,26 @@ func normalizedFaceName(fontName: String) -> String {
     }
     else
     {
-        return "regular"
+        // Let's see if we can determine the type based on capitalization
+        let fontNameLowercaseStart = fontName.lowercaseFirst
+        
+        var displayString = ""
+        var isCollecting = false
+        
+        for char in fontNameLowercaseStart
+        {
+            guard !isCollecting else {
+                displayString += String(char)
+                continue
+            }
+            
+            if ("A"..."Z").contains(char)
+            {
+                displayString += String(char)
+                isCollecting = true
+            }
+        }
+        
+        return displayString.isEmpty ? "regular" : displayString.lowercaseFirst
     }
 }

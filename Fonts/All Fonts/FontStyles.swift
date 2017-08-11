@@ -1,65 +1,65 @@
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum academyEngravedLET: String {
+	public enum academyEngravedLET: String {
 
-		case regular = "AcademyEngravedLetPlain"
+		case engravedLetPlain = "AcademyEngravedLetPlain"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 7.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum alNile: String {
+	public enum alNile: String {
 
 		case bold = "AlNile-Bold"
-		case regular = "AlNile"
+		case nile = "AlNile"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum americanTypewriter: String {
+	public enum americanTypewriter: String {
 
-		case regular = "AmericanTypewriter"
+		case typewriter = "AmericanTypewriter"
 		case bold = "AmericanTypewriter-Bold"
 		case condensed = "AmericanTypewriter-Condensed"
 		case condensedBold = "AmericanTypewriter-CondensedBold"
 		case condensedLight = "AmericanTypewriter-CondensedLight"
 		case light = "AmericanTypewriter-Light"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum appleColorEmoji: String {
+	public enum appleColorEmoji: String {
 
-		case regular = "AppleColorEmoji"
+		case colorEmoji = "AppleColorEmoji"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum appleSDGothicNeo: String {
+	public enum appleSDGothicNeo: String {
 
 		case thin = "AppleSDGothicNeo-Thin"
 		case light = "AppleSDGothicNeo-Light"
@@ -67,62 +67,61 @@ extension UIFont {
 		case medium = "AppleSDGothicNeo-Medium"
 		case semiBold = "AppleSDGothicNeo-SemiBold"
 		case bold = "AppleSDGothicNeo-Bold"
-		case medium = "AppleSDGothicNeo-Medium"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum arial: String {
+	public enum arial: String {
 
-		case regular = "ArialMT"
+		case mT = "ArialMT"
 		case boldItalicMT = "Arial-BoldItalicMT"
 		case boldMT = "Arial-BoldMT"
 		case italicMT = "Arial-ItalicMT"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum arialHebrew: String {
+	public enum arialHebrew: String {
 
-		case regular = "ArialHebrew"
+		case hebrew = "ArialHebrew"
 		case bold = "ArialHebrew-Bold"
 		case light = "ArialHebrew-Light"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum arialRoundedMTBold: String {
+	public enum arialRoundedMTBold: String {
 
-		case regular = "ArialRoundedMTBold"
+		case roundedMTBold = "ArialRoundedMTBold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 6.0 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum avenir: String {
+	public enum avenir: String {
 
 		case black = "Avenir-Black"
 		case blackOblique = "Avenir-BlackOblique"
@@ -137,16 +136,16 @@ extension UIFont {
 		case oblique = "Avenir-Oblique"
 		case roman = "Avenir-Roman"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 6.0 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum avenirNext: String {
+	public enum avenirNext: String {
 
 		case bold = "AvenirNext-Bold"
 		case boldItalic = "AvenirNext-BoldItalic"
@@ -161,16 +160,16 @@ extension UIFont {
 		case ultraLight = "AvenirNext-UltraLight"
 		case ultraLightItalic = "AvenirNext-UltraLightItalic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 6.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum avenirNextCondensed: String {
+	public enum avenirNextCondensed: String {
 
 		case bold = "AvenirNextCondensed-Bold"
 		case boldItalic = "AvenirNextCondensed-BoldItalic"
@@ -185,30 +184,30 @@ extension UIFont {
 		case ultraLight = "AvenirNextCondensed-UltraLight"
 		case ultraLightItalic = "AvenirNextCondensed-UltraLightItalic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum banglaSangamMN: String {
+	public enum banglaSangamMN: String {
 
-		case regular = "BanglaSangamMN"
+		case sangamMN = "BanglaSangamMN"
 		case bold = "BanglaSangamMN-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum baskerville: String {
+	public enum baskerville: String {
 
 		case regular = "Baskerville"
 		case bold = "Baskerville-Bold"
@@ -217,422 +216,422 @@ extension UIFont {
 		case semiBold = "Baskerville-SemiBold"
 		case semiBoldItalic = "Baskerville-SemiBoldItalic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum bodoniOrnaments: String {
+	public enum bodoniOrnaments: String {
 
-		case regular = "BodoniOrnamentsITCTT"
+		case ornamentsITCTT = "BodoniOrnamentsITCTT"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum bodoni72: String {
+	public enum bodoni72: String {
 
 		case bold = "BodoniSvtyTwoITCTT-Bold"
 		case book = "BodoniSvtyTwoITCTT-Book"
 		case bookIta = "BodoniSvtyTwoITCTT-BookIta"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum bodoni72Oldstyle: String {
+	public enum bodoni72Oldstyle: String {
 
 		case bold = "BodoniSvtyTwoOSITCTT-Bold"
 		case book = "BodoniSvtyTwoOSITCTT-Book"
 		case bookIt = "BodoniSvtyTwoOSITCTT-BookIt"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum bodoni72Smallcaps: String {
+	public enum bodoni72Smallcaps: String {
 
 		case book = "BodoniSvtyTwoSCITCTT-Book"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 6.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum bradleyHand: String {
+	public enum bradleyHand: String {
 
 		case bold = "BradleyHandITCTT-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum chalkboardSE: String {
+	public enum chalkboardSE: String {
 
 		case bold = "ChalkboardSE-Bold"
 		case light = "ChalkboardSE-Light"
 		case regular = "ChalkboardSE-Regular"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum chalkduster: String {
+	public enum chalkduster: String {
 
 		case regular = "Chalkduster"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum cochin: String {
+	public enum cochin: String {
 
 		case regular = "Cochin"
 		case bold = "Cochin-Bold"
 		case boldItalic = "Cochin-BoldItalic"
 		case italic = "Cochin-Italic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum copperplate: String {
+	public enum copperplate: String {
 
 		case regular = "Copperplate"
 		case bold = "Copperplate-Bold"
 		case light = "Copperplate-Light"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum courier: String {
+	public enum courier: String {
 
 		case regular = "Courier"
 		case bold = "Courier-Bold"
 		case boldOblique = "Courier-BoldOblique"
 		case oblique = "Courier-Oblique"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum courierNew: String {
+	public enum courierNew: String {
 
 		case boldItalicMT = "CourierNewPS-BoldItalicMT"
 		case boldMT = "CourierNewPS-BoldMT"
 		case italicMT = "CourierNewPS-ItalicMT"
-		case regular = "CourierNewPSMT"
+		case newPSMT = "CourierNewPSMT"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum dBLCDTemp: String {
+	public enum dBLCDTemp: String {
 
-		case regular = "DBLCDTempBlack"
+		case bLCDTempBlack = "DBLCDTempBlack"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 7.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum dINAlternate: String {
+	public enum dINAlternate: String {
 
 		case bold = "DINAlternate-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 7.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum dINCondensed: String {
+	public enum dINCondensed: String {
 
 		case bold = "DINCondensed-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 7.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum damascus: String {
+	public enum damascus: String {
 
-		case regular = "DamascusBold"
+		case bold = "DamascusBold"
 		case regular = "Damascus"
-		case regular = "DamascusLight"
-		case regular = "DamascusMedium"
-		case regular = "DamascusSemiBold"
+		case light = "DamascusLight"
+		case medium = "DamascusMedium"
+		case semiBold = "DamascusSemiBold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum devanagariSangamMN: String {
+	public enum devanagariSangamMN: String {
 
-		case regular = "DevanagariSangamMN"
+		case sangamMN = "DevanagariSangamMN"
 		case bold = "DevanagariSangamMN-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum didot: String {
+	public enum didot: String {
 
 		case regular = "Didot"
 		case bold = "Didot-Bold"
 		case italic = "Didot-Italic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 7.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum diwanMishafi: String {
+	public enum diwanMishafi: String {
 
-		case regular = "DiwanMishafi"
+		case mishafi = "DiwanMishafi"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 6.0 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum euphemiaUCAS: String {
+	public enum euphemiaUCAS: String {
 
-		case regular = "EuphemiaUCAS"
+		case uCAS = "EuphemiaUCAS"
 		case bold = "EuphemiaUCAS-Bold"
 		case italic = "EuphemiaUCAS-Italic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 7.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum farah: String {
+	public enum farah: String {
 
 		case regular = "Farah"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum futura: String {
+	public enum futura: String {
 
 		case condensedExtraBold = "Futura-CondensedExtraBold"
 		case condensedMedium = "Futura-CondensedMedium"
 		case medium = "Futura-Medium"
 		case mediumItalic = "Futura-MediumItalic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum geezaPro: String {
+	public enum geezaPro: String {
 
-		case regular = "GeezaPro"
+		case pro = "GeezaPro"
 		case bold = "GeezaPro-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum georgia: String {
+	public enum georgia: String {
 
 		case regular = "Georgia"
 		case bold = "Georgia-Bold"
 		case boldItalic = "Georgia-BoldItalic"
 		case italic = "Georgia-Italic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum gillSans: String {
+	public enum gillSans: String {
 
-		case regular = "GillSans"
+		case sans = "GillSans"
 		case bold = "GillSans-Bold"
 		case boldItalic = "GillSans-BoldItalic"
 		case italic = "GillSans-Italic"
 		case light = "GillSans-Light"
 		case lightItalic = "GillSans-LightItalic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum gujaratiSangamMN: String {
+	public enum gujaratiSangamMN: String {
 
-		case regular = "GujaratiSangamMN"
+		case sangamMN = "GujaratiSangamMN"
 		case bold = "GujaratiSangamMN-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum gurmukhiMN: String {
+	public enum gurmukhiMN: String {
 
-		case regular = "GurmukhiMN"
+		case mN = "GurmukhiMN"
 		case bold = "GurmukhiMN-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum heitiSC: String {
+	public enum heitiSC: String {
 
 		case light = "STHeitiSC-Light"
 		case medium = "STHeitiSC-Medium"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum heitiTC: String {
+	public enum heitiTC: String {
 
 		case light = "STHeitiTC-Light"
 		case medium = "STHeitiTC-Medium"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum helvetica: String {
+	public enum helvetica: String {
 
 		case regular = "Helvetica"
 		case bold = "Helvetica-Bold"
@@ -641,18 +640,18 @@ extension UIFont {
 		case lightOblique = "Helvetica-LightOblique"
 		case oblique = "Helvetica-Oblique"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum helveticaNeue: String {
+	public enum helveticaNeue: String {
 
-		case regular = "HelveticaNeue"
+		case neue = "HelveticaNeue"
 		case bold = "HelveticaNeue-Bold"
 		case boldItalic = "HelveticaNeue-BoldItalic"
 		case condensedBlack = "HelveticaNeue-CondensedBlack"
@@ -667,218 +666,218 @@ extension UIFont {
 		case thin = "HelveticaNeue-Thin"
 		case thinItalic = "HelveticaNeue-ThinItalic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum hiraginoKakuGothicProN: String {
+	public enum hiraginoKakuGothicProN: String {
 
 		case w3 = "HiraKakuProN-W3"
 		case w6 = "HiraKakuProN-W6"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum hiraginoMinchoProN: String {
+	public enum hiraginoMinchoProN: String {
 
 		case w3 = "HiraMinProN-W3"
 		case w6 = "HiraMinProN-W6"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum hoeflerText: String {
+	public enum hoeflerText: String {
 
 		case black = "HoeflerText-Black"
 		case blackItalic = "HoeflerText-BlackItalic"
 		case italic = "HoeflerText-Italic"
 		case regular = "HoeflerText-Regular"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 7.0 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum iowanOldStyle: String {
+	public enum iowanOldStyle: String {
 
 		case bold = "IowanOldStyle-Bold"
 		case boldItalic = "IowanOldStyle-BoldItalic"
 		case italic = "IowanOldStyle-Italic"
 		case roman = "IowanOldStyle-Roman"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum kailasa: String {
+	public enum kailasa: String {
 
 		case regular = "Kailasa"
 		case bold = "Kailasa-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum kannadaSangamMN: String {
+	public enum kannadaSangamMN: String {
 
-		case regular = "KannadaSangamMN"
+		case sangamMN = "KannadaSangamMN"
 		case bold = "KannadaSangamMN-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 8.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum khmerSangamMN: String {
+	public enum khmerSangamMN: String {
 
-		case regular = "KhmerSangamMN"
+		case sangamMN = "KhmerSangamMN"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 8.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum kohinoorDevanagari: String {
+	public enum kohinoorDevanagari: String {
 
 		case book = "KohinoorDevanagari-Book"
 		case light = "KohinoorDevanagari-Light"
 		case medium = "KohinoorDevanagari-Medium"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 8.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum laoSangamMN: String {
+	public enum laoSangamMN: String {
 
-		case regular = "LaoSangamMN"
+		case sangamMN = "LaoSangamMN"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum malayalamSangamMN: String {
+	public enum malayalamSangamMN: String {
 
-		case regular = "MalayalamSangamMN"
+		case sangamMN = "MalayalamSangamMN"
 		case bold = "MalayalamSangamMN-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum marion: String {
+	public enum marion: String {
 
 		case bold = "Marion-Bold"
 		case italic = "Marion-Italic"
 		case regular = "Marion-Regular"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 7.0 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum menlo: String {
+	public enum menlo: String {
 
 		case boldItalic = "Menlo-BoldItalic"
 		case regular = "Menlo-Regular"
 		case bold = "Menlo-Bold"
 		case italic = "Menlo-Italic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum markerFelt: String {
+	public enum markerFelt: String {
 
 		case thin = "MarkerFelt-Thin"
 		case wide = "MarkerFelt-Wide"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum noteworthy: String {
+	public enum noteworthy: String {
 
 		case bold = "Noteworthy-Bold"
 		case light = "Noteworthy-Light"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum optima: String {
+	public enum optima: String {
 
 		case bold = "Optima-Bold"
 		case boldItalic = "Optima-BoldItalic"
@@ -886,171 +885,115 @@ extension UIFont {
 		case italic = "Optima-Italic"
 		case regular = "Optima-Regular"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum oriyaSangamMN: String {
+	public enum oriyaSangamMN: String {
 
-		case regular = "OriyaSangamMN"
+		case sangamMN = "OriyaSangamMN"
 		case bold = "OriyaSangamMN-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum palatino: String {
+	public enum palatino: String {
 
 		case bold = "Palatino-Bold"
 		case boldItalic = "Palatino-BoldItalic"
 		case italic = "Palatino-Italic"
 		case roman = "Palatino-Roman"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum papyrus: String {
+	public enum papyrus: String {
 
 		case regular = "Papyrus"
 		case condensed = "Papyrus-Condensed"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum partyLET: String {
+	public enum partyLET: String {
 
-		case regular = "PartyLetPlain"
+		case letPlain = "PartyLetPlain"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
-		}
-	}
-}
-
-@available(watchOS 8.3, *)
-extension UIFont {
-
-	enum sanFrancisco: String {
-
-		case black = "SanFranciscoDisplay-Black"
-		case bold = "SanFranciscoDisplay-Bold"
-		case heavy = "SanFranciscoDisplay-Heavy"
-		case light = "SanFranciscoDisplay-Light"
-		case medium = "SanFranciscoDisplay-Medium"
-		case regular = "SanFranciscoDisplay-Regular"
-		case semibold = "SanFranciscoDisplay-Semibold"
-		case thin = "SanFranciscoDisplay-Thin"
-		case ultralight = "SanFranciscoDisplay-Ultralight"
-		case black = "SanFranciscoRounded-Black"
-		case bold = "SanFranciscoRounded-Bold"
-		case heavy = "SanFranciscoRounded-Heavy"
-		case light = "SanFranciscoRounded-Light"
-		case medium = "SanFranciscoRounded-Medium"
-		case regular = "SanFranciscoRounded-Regular"
-		case semibold = "SanFranciscoRounded-Semibold"
-		case thin = "SanFranciscoRounded-Thin"
-		case ultralight = "SanFranciscoRounded-Ultralight"
-		case bold = "SanFranciscoText-Bold"
-		case boldG1 = "SanFranciscoText-BoldG1"
-		case boldG2 = "SanFranciscoText-BoldG2"
-		case boldG3 = "SanFranciscoText-BoldG3"
-		case boldItalic = "SanFranciscoText-BoldItalic"
-		case boldItalicG1 = "SanFranciscoText-BoldItalicG1"
-		case boldItalicG2 = "SanFranciscoText-BoldItalicG2"
-		case boldItalicG3 = "SanFranciscoText-BoldItalicG3"
-		case heavy = "SanFranciscoText-Heavy"
-		case heavyItalic = "SanFranciscoText-HeavyItalic"
-		case light = "SanFranciscoText-Light"
-		case lightItalic = "SanFranciscoText-LightItalic"
-		case medium = "SanFranciscoText-Medium"
-		case mediumItalic = "SanFranciscoText-MediumItalic"
-		case regular = "SanFranciscoText-Regular"
-		case regularG1 = "SanFranciscoText-RegularG1"
-		case regularG2 = "SanFranciscoText-RegularG2"
-		case regularG3 = "SanFranciscoText-RegularG3"
-		case regularItalic = "SanFranciscoText-RegularItalic"
-		case regularItalicG1 = "SanFranciscoText-RegularItalicG1"
-		case regularItalicG2 = "SanFranciscoText-RegularItalicG2"
-		case regularItalicG3 = "SanFranciscoText-RegularItalicG3"
-		case semibold = "SanFranciscoText-Semibold"
-		case semiboldItalic = "SanFranciscoText-SemiboldItalic"
-		case thin = "SanFranciscoText-Thin"
-		case thinItalic = "SanFranciscoText-ThinItalic"
-
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 7.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum savoyeLetPlain: String {
+	public enum savoyeLetPlain: String {
 
-		case regular = "SavoyeLetPlain"
+		case letPlain = "SavoyeLetPlain"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum sinhalaSangamMN: String {
+	public enum sinhalaSangamMN: String {
 
-		case regular = "SinhalaSangamMN"
+		case sangamMN = "SinhalaSangamMN"
 		case bold = "SinhalaSangamMN-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum snellRoundhand: String {
+	public enum snellRoundhand: String {
 
-		case regular = "SnellRoundhand"
+		case roundhand = "SnellRoundhand"
 		case black = "SnellRoundhand-Black"
 		case bold = "SnellRoundhand-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 7.0 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum superclarendon: String {
+	public enum superclarendon: String {
 
 		case regular = "Superclarendon-Regular"
 		case boldItalic = "Superclarendon-BoldItalic"
@@ -1061,138 +1004,138 @@ extension UIFont {
 		case bold = "Superclarendon-Bold"
 		case black = "Superclarendon-Black"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 6.0 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum symbol: String {
+	public enum symbol: String {
 
 		case regular = "Symbol"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum tamilSangamMN: String {
+	public enum tamilSangamMN: String {
 
-		case regular = "TamilSangamMN"
+		case sangamMN = "TamilSangamMN"
 		case bold = "TamilSangamMN-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum teluguSangamMN: String {
+	public enum teluguSangamMN: String {
 
-		case regular = "TeluguSangamMN"
+		case sangamMN = "TeluguSangamMN"
 		case bold = "TeluguSangamMN-Bold"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum thonburi: String {
+	public enum thonburi: String {
 
 		case regular = "Thonburi"
 		case bold = "Thonburi-Bold"
 		case light = "Thonburi-Light"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum timesNewRoman: String {
+	public enum timesNewRoman: String {
 
 		case boldItalicMT = "TimesNewRomanPS-BoldItalicMT"
 		case boldMT = "TimesNewRomanPS-BoldMT"
 		case italicMT = "TimesNewRomanPS-ItalicMT"
-		case regular = "TimesNewRomanPSMT"
+		case newRomanPSMT = "TimesNewRomanPSMT"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum trebuchetMS: String {
+	public enum trebuchetMS: String {
 
 		case boldItalic = "Trebuchet-BoldItalic"
-		case regular = "TrebuchetMS"
+		case mS = "TrebuchetMS"
 		case bold = "TrebuchetMS-Bold"
 		case italic = "TrebuchetMS-Italic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum verdana: String {
+	public enum verdana: String {
 
 		case regular = "Verdana"
 		case bold = "Verdana-Bold"
 		case boldItalic = "Verdana-BoldItalic"
 		case italic = "Verdana-Italic"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 5.0 ,watchOS 8.0 ,tvOS 9.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum zapfDingbats: String {
+	public enum zapfDingbats: String {
 
-		case regular = "ZapfDingbatsITC"
+		case dingbatsITC = "ZapfDingbatsITC"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }
 
 @available(iOS 4.3 ,watchOS 8.0, *)
-extension UIFont {
+public extension UIFont {
 
-	enum zapfino: String {
+	public enum zapfino: String {
 
 		case regular = "Zapfino"
 
-		func font(size: CGFloat) -> UIFont {
-			return UIFont(self.rawValue, size: size)!
+		public func font(size: CGFloat) -> UIFont {
+			return UIFont(name: self.rawValue, size: size)!
 		}
 	}
 }

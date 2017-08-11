@@ -46,6 +46,11 @@ for currentFont in fonts
         continue
     }
     
+    // San francisco has varying styles, per device, along with weird overlaps. We remove it here, as it's already available as a 'real' API from UIFont, so not worth supporting.
+    guard familyName.lowercased() != "san francisco" else {
+        continue
+    }
+    
     guard let extensionContent = generateFontFamilyExtension(fontFamily: currentFont) else {
         
         print("Warning: Unable to create extension for font: \(familyName)")
@@ -58,7 +63,7 @@ for currentFont in fonts
     let extensionWriteDirectory = outputDirectory.appendingPathComponent(familyName)
     _ = try? FileManager.default.createDirectory(at: extensionWriteDirectory, withIntermediateDirectories: true, attributes: nil)
     
-    let extensionWriteFile = extensionWriteDirectory.appendingPathComponent("FontStyles.swift")
+    let extensionWriteFile = extensionWriteDirectory.appendingPathComponent("\(familyName)-FontStyles.swift")
     _ = try? extensionContent.write(to: extensionWriteFile, atomically: true, encoding: .utf8)
     
     collectedPodSpecs += "  s.subspec '\(normalizeFontName(fontName: familyName))' do |spec|\n"
